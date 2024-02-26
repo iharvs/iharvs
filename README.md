@@ -9,7 +9,7 @@
 I recently got a Bachelor of Science in Information Technology with specialization in Web and Mobile Application from FEU - Institute of Technology. I have extensive experience in programming and graphic design. Specifically, I have expertise in front-end development using Vue.JS, React.JS, React Native, BootStrap, and jQuery, as well as back-end development using Laravel and CodeIgniter.
 
 
-- 🎯 Portfolio website: [Portfolio](https://iharvs.github.io/)
+- 🎯 Portfolio website: [Portfolio](https://iharvs.vercel.app/)
 - 💬 Ask me about anything, I am happy to help :smile:
 - 📬 How to reach me: [Let's get in touch!](https://www.linkedin.com/in/harveyarboleda/)
 
