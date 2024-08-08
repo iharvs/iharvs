@@ -48,6 +48,7 @@ I recently got a Bachelor of Science in Information Technology with specializati
 ![Adobe Photoshop](https://img.shields.io/badge/Adobe%20Photoshop-%2331A8FF.svg?logo=adobe%20photoshop&logoColor=white)
 ![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?logo=Adobe%20XD&logoColor=#FF61F6)
 ![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?logo=figma&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%231a1a1a.svg?logo=Spring%20Boot&logoColor=green)
 
 ## 🔥 Github Streaks<br/>
 <p align="center">
