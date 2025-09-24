@@ -13,8 +13,7 @@ I recently got a Bachelor of Science in Information Technology with specializati
 - 💬 Ask me about anything, I am happy to help :smile:
 - 📬 How to reach me: [Let's get in touch!](https://www.linkedin.com/in/harveyarboleda/)
 
-## Languages and Tools:
-
+## Skills:
 ## 🚀 Frontend
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?logo=Bootstrap&logoColor=white&style=for-the-badge)
 ![AntDesign](https://img.shields.io/badge/-AntDesign-%230170FE?logo=ant-design&logoColor=white&style=for-the-badge)
@@ -66,13 +65,13 @@ I recently got a Bachelor of Science in Information Technology with specializati
 
 ## 🔥 Github Streaks<br/>
 <p align="center">
-  <a href="#"><img width="500px" src="https://github-readme-streak-stats.herokuapp.com/?user=iharvs&hide_border=true&theme=dark"></a>
+ <img alt="iharvs's Github Streaks" width="500px" src="https://github-readme-streak-stats.herokuapp.com/?user=iharvs&hide_border=true&theme=dark" />
 </p>
 
-## 💻 GitHub Stats <br/>
+<!--## 💻 GitHub Stats <br/>
 <p align="center">
   <img alt="iharvs's Github Stats" src="https://streak-stats.demolab.com?user=iharvs&theme=dark&border_radius=0&short_numbers=true&date_format=M%20j%5B%2C%20Y%5D&mode=weekly&hide_longest_streak=true" height="192px" width="430px" />
-</p>
+</p>-->
 
 <p align="center">
  <a href="#">
