@@ -7,8 +7,11 @@
       </td>
     </tr>
     <tr>
-     <td><img src="./metrics.classic.svg" alt="classic" /></td>
-     <td><img src="./metrics.plugin.isocalendar.fullyear.svg" alt="fullyear" /></td>
+     <td width="50%"><img src="./metrics.classic.svg" alt="classic" width="100%"/></td>
+     <td width="50%">
+      <img src="./profile/streak.svg" width="100%"/><br/>
+      <img src="./metrics.plugin.isocalendar.fullyear.svg" alt="fullyear" />
+     </td>
     </tr>
   </table>
 </div>
