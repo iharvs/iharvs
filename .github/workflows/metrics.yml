@@ -1,30 +1,39 @@
-# https://github.com/lowlighter/metrics
+
 name: Metrics
+
 on:
-  # Schedule hourly updates
-  schedule: [{cron: "0 * * * *"}]
-  # (optional) Run workflow manually
+  # Update Metrics hourly
+  schedule:
+    - cron: "0 * * * *"
+
+    # Update streak stats daily at 3:00 AM Manila time (UTC+8)
+    - cron: "0 19 * * *"
+
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
-  push: {branches: ["master", "main"]}
+
+  push:
+    branches: ["master", "main"]
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    environment: 
+    environment:
       name: production
     permissions:
       contents: write
+
     steps:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          
+
           user: iharvs
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Manila
           commits_authoring: iharvs, iharvs@users.noreply.github.com
+
           plugin_languages: yes
           plugin_languages_skipped: iharvs
           plugin_languages_limit: 24
@@ -38,6 +47,7 @@ jobs:
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_load: 300
           plugin_languages_recent_days: 14
+
       - name: Full-year calendar
         uses: lowlighter/metrics@latest
         with:
@@ -46,3 +56,25 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+
+  streak-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate streak stats
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          options: user=${{ github.repository_owner }}&theme=default&disable_animations=true
+          path: profile/streak.svg
+
+      - name: Commit streak stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile/streak.svg
+          git commit -m "Update streak stats" || exit 0
+          git push
